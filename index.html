@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+    <!-- Servidores de Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio do Angelo, Desenvolvedor web FullStack">
@@ -8,20 +16,22 @@
     <meta name="keywords" content="Portfólio, desenvolvedor, java, web, fullstack, Java, HTML, CSS, JavaScript, React,PostgreSQL, MySQL, Git, GitHub, Docker, Agile, Scrum, Kanban, TypeScript,RESTful APIs,Tailwind CSS, Bootstrap">
     <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
 
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
     <title>Portfólio do Ângelo</title>
 </head>
 <body>
     
-    <header>
+    <header class="flex menu_container">
         
-        <div id="header_content">
+        <div id="header_content" class="menu_content">
             <div id="titulo">
                 <a href="#">Universo</a>
             </div>
 
-            <div id="menu">
+            <div id="menu" class="flex">
                 <nav>
-                    <ul>
+                    <ul class="flex menu_list">
                         <li><a href="#">Home</a></li>
                         <li><a href="#about">Sobre</a></li>
                         <li><a href="#contact">Contatos</a></li>
@@ -34,23 +44,23 @@
 
     <main>
 
-        <section id="home">
+        <section id="home" class="flex home_container">
 
-            <article id="home_texto">
+            <article id="home_texto" class="flex home_content">
 
                 <h4>Bem-vindo ao novo Universo</h4>
                 <h1>Munods diferentes para pessoas diferentes</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium error ut optio ea laboriosam asperiores, quasi magnam eos aspernatur quos quisquam, eaque nemo enim ipsam nam quis minus unde consectetur?</p>
-                <a href="https://github.com/angelokapunda" target="_blank">Explorar</a>
+                <a href="https://github.com/angelokapunda" target="_blank" class="botao">Explorar</a>
             </article>
 
-            <article id="home_imagem">
+            <article id="home_imagem" class="flex home_content">
                 <img src="./assets/img/astronauta.svg" alt="Capacete do astronalta com animação">
             </article>
 
         </section>
 
-        <section id="about">
+        <section id="about" class="flex sobre_container">
 
             <img src="./assets/img/user_01.svg" alt="Foto do perfil do GitHub">
 
@@ -59,8 +69,8 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem asperiores soluta expedita possimus nemo labore, magni officiis odio non natus totam saepe dolores quam molestiae unde blanditiis aut commodi eum.</p>
             </article>
 
-            <div class="about_github">
-                <a href="https://github.com/angelokapunda">GitHub</a>
+            <div class="about_github" class="flex sobre_github">
+                <a href="https://github.com/angelokapunda" class="botao">GitHub</a>
                 <p>20 Seguidores</p>
                 <p>38 Repositórios</p>
                 
@@ -68,26 +78,27 @@
 
         </section>
 
-        <section id="contact">
+        <section id="contact" class="contato_container">
+            <article id="redes_sociais" class="contato_content">
+                <h4>Contate-me</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo amet corrupti id animi, debitis dolores commodi ad ipsa veniam nihil nesciunt, quis culpa tempora aperiam laudantium deleniti rerum, qui aut!</p>
 
-            <h4>Contate-me</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo amet corrupti id animi, debitis dolores commodi ad ipsa veniam nihil nesciunt, quis culpa tempora aperiam laudantium deleniti rerum, qui aut!</p>
+                <div id="icones_redes_sociais" class="social_container">
 
-            <div id="icones_redes_sociais">
+                    <a href="https://www.linkedin.com/in/angelokapunda/" target="_blank" class="social_icon">
+                        <img src="./assets/img/linkedin.svg" alt="Link do linkedin">
+                    </a>
 
-                <a href="https://www.linkedin.com/in/angelokapunda/" target="_blank">
-                    <img src="./assets/img/linkedin.svg" alt="Link do linkedin">
-                </a>
+                    <a href="https://github.com/angelokapunda/" target="_blank" class="social_icon">
+                        <img src="./assets/img/github.svg" alt="Link doo github">
+                    </a>
 
-                <a href="https://github.com/angelokapunda/" target="_blank">
-                    <img src="./assets/img/github.svg" alt="Link doo github">
-                </a>
+                    <a href="https://www.linkedin.com/in/angelokapunda/" target="_blank" class="social_icon">
+                        <img src="./assets/img/facebook.svg" alt="Lnk do Facebook">
+                    </a>
 
-                <a href="https://www.linkedin.com/in/angelokapunda/" target="_blank">
-                    <img src="./assets/img/facebook.svg" alt="Lnk do Facebook">
-                </a>
-
-            </div>
+                </div>
+            </article>
 
             <form action="" method="POST">
 
@@ -106,7 +117,7 @@
                 <label for="mensagem">Mensagem</label>
                 <textarea name="mensagem" id="mensagem"placeholder="Digite a sua mensagem"></textarea>
 
-                <button type="submit">Enviar</button>
+                <button class="botao" type="submit">Enviar</button>
 
             </form>
 
