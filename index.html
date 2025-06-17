@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
     <!-- Servidores de Fontes do Google -->
@@ -11,22 +12,25 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio do Angelo, Desenvolvedor web FullStack">
-    <meta name="author" content="Ângelo dos Santos">
-    <meta name="keywords" content="Portfólio, desenvolvedor, java, web, fullstack, Java, HTML, CSS, JavaScript, React,PostgreSQL, MySQL, Git, GitHub, Docker, Agile, Scrum, Kanban, TypeScript,RESTful APIs,Tailwind CSS, Bootstrap">
-    <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
+    <meta name="description" content="Projeto Portfólio do Rafael, desenvolvedor web fullstack.">
+    <meta name="author" content="Rafael Queiróz">
+    <meta name="keywords" content="portfólio, desenvolvedor, web, fullstack, Rafael Queiróz, HTML, CSS, JavaScript">
+    <link rel="icon" href="./assets/img/favicon.svg" />
 
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="./assets/js/spring.js" defer></script>
 
-    <title>Portfólio do Ângelo</title>
+    <title>Portfólio do Ângelo dos Santos</title>
 </head>
+
 <body>
-    
+
     <header class="flex menu_container">
-        
+
         <div id="header_content" class="menu_content">
+
             <div id="titulo">
-                <a href="#">Universo</a>
+                <a href="#">Ângelo dos Santos</a>
             </div>
 
             <div id="menu" class="flex">
@@ -39,7 +43,6 @@
                 </nav>
             </div>
         </div>
-
     </header>
 
     <main>
@@ -47,87 +50,77 @@
         <section id="home" class="flex home_container">
 
             <article id="home_texto" class="flex home_content">
-
-                <h4>Bem-vindo ao novo Universo</h4>
-                <h1>Munods diferentes para pessoas diferentes</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium error ut optio ea laboriosam asperiores, quasi magnam eos aspernatur quos quisquam, eaque nemo enim ipsam nam quis minus unde consectetur?</p>
+                <h3>Bem-vindo ao meu portfólio</h3>
+                <h1>Transformando ideias em código, e código em soluções.</h1>
+                <p>Desenvolvedor Java Júnior com base sólida em orientação a objetos, API REST e Spring Boot. Pronto para contribuir com equipes de tecnologia, entregar valor e evoluir com cada desafio...</p>
                 <a href="https://github.com/angelokapunda" target="_blank" class="botao">Explorar</a>
             </article>
 
             <article id="home_imagem" class="flex home_content">
-                <img src="./assets/img/astronauta.svg" alt="Capacete do astronalta com animação">
+                <img src="./assets/img/astronauta.svg" alt="Capacete do astronauta com animação" />
             </article>
-
         </section>
 
         <section id="about" class="flex sobre_container">
 
-            <img src="./assets/img/user_01.svg" alt="Foto do perfil do GitHub">
-
-            <article id="about_texto">
-                <h1>Sobre Mim</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem asperiores soluta expedita possimus nemo labore, magni officiis odio non natus totam saepe dolores quam molestiae unde blanditiis aut commodi eum.</p>
-            </article>
-
-            <div class="about_github" class="flex sobre_github">
-                <a href="https://github.com/angelokapunda" class="botao">GitHub</a>
-                <p>20 Seguidores</p>
-                <p>38 Repositórios</p>
-                
-            </div>
-
         </section>
+        
 
         <section id="contact" class="contato_container">
+
             <article id="redes_sociais" class="contato_content">
                 <h4>Contate-me</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo amet corrupti id animi, debitis dolores commodi ad ipsa veniam nihil nesciunt, quis culpa tempora aperiam laudantium deleniti rerum, qui aut!</p>
+                <p>Se você tem uma ideia, projeto ou apenas quer trocar uma ideia sobre desenvolvimento, estou à disposição!
+                    Estou em busca de oportunidades onde eu possa aprender, colaborar e evoluir como desenvolvedor.
+                    
+                    Entre em contato pelo formulário abaixo ou, se preferir, fale comigo diretamente pelas redes:</p>
 
                 <div id="icones_redes_sociais" class="social_container">
-
-                    <a href="https://www.linkedin.com/in/angelokapunda/" target="_blank" class="social_icon">
-                        <img src="./assets/img/linkedin.svg" alt="Link do linkedin">
+                    <a href="" target="_blank" class="social_icon">
+                        <img src="./assets/img/linkedin.svg" alt="Ícone do LinkedIn" />
                     </a>
 
-                    <a href="https://github.com/angelokapunda/" target="_blank" class="social_icon">
-                        <img src="./assets/img/github.svg" alt="Link doo github">
+                    <a href="" target="_blank" class="social_icon">
+                        <img src="./assets/img/github.svg" alt="Ícone do GitHub" />
                     </a>
 
-                    <a href="https://www.linkedin.com/in/angelokapunda/" target="_blank" class="social_icon">
-                        <img src="./assets/img/facebook.svg" alt="Lnk do Facebook">
+                    <a href="" target="_blank" class="social_icon">
+                        <img src="./assets/img/instagram.svg" alt="Ícone do Instagram" />
                     </a>
-
                 </div>
             </article>
 
-            <form action="" method="POST">
+            <form action="https://formsubmit.co/53946c7453b0f5f98ae6de13c353905f" method="POST" id="formulario">
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucess.html">
+                <input type="hidden" name="_captcha" value="false">
 
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Digite o seu nme">
+                <input id="nome" name="nome" type="text" placeholder="Digite o seu nome">
                 <span id="txtNome"></span>
 
                 <label for="email">E-mail</label>
-                <input type="text" name="email" id="nome" placeholder="Digite um E-mail válido">
+                <input id="email" name="email" type="text" placeholder="Digite um endereço de e-mail válido">
                 <span id="txtEmail"></span>
 
                 <label for="assunto">Assunto</label>
-                <input type="text" name="assunto" id="assunto" placeholder="Digite o sassunto">
+                <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto">
                 <span id="txtAssunto"></span>
 
                 <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem"placeholder="Digite a sua mensagem"></textarea>
+
+                <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem">
+                </textarea>
 
                 <button class="botao" type="submit">Enviar</button>
-
             </form>
-
         </section>
-
     </main>
 
     <footer>
-        Feito com coração por Ângelo dos Santos - 2025
+        Feito de ❤ por Ângelo dos Santos - 2025
     </footer>
 
 </body>
+
 </html>
