@@ -16,7 +16,16 @@ async function getApiGithub() {
 
             <article id="about_texto">
                 <h1>Sobre mim</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, quibusdam esse sed veritatis eum at? Libero doloremque obcaecati rem esse consequuntur aperiam, ipsam amet accusantium, nemo vel, hic doloribus! Est.${perfil.bio}</p>
+                <p>Olá! Meu nome é Angelo dos Santos, sou desenvolvedor Java Fullstack apaixonado por tecnologia e por resolver problemas com código.
+                    Comecei minha jornada na programação com curiosidade e logo percebi que construir soluções digitais era o que eu queria fazer da vida.
+
+                    Atualmente estudo e desenvolvo projetos com HTML, CSS, JavaScript,React, Java e Spring Boot, buscando sempre evoluir minhas habilidades técnicas e entender cada vez mais sobre boas práticas e arquitetura de software.
+
+                    Sou uma pessoa proativa, dedicada e com muita vontade de aprender. Gosto de trabalhar em equipe, compartilhar conhecimento e encarar desafios como oportunidades de crescimento.
+
+                    Meu objetivo agora é conquistar minha primeira oportunidade profissional como desenvolvedor ou colaborar em projetos reais, onde eu possa aplicar e expandir meus conhecimentos.
+                    </p>
+                    <p> <strong> Aprendizado constante e a ideia de que ninguém nasce sênior — mas todo sênior já foi júnior como eu. </strong> </p>
 
                 <div id="about_github" class="flex sobre_github">
                     <a href="${perfil.html_url}" target="_blank" class="botao">Github</a>
@@ -74,5 +83,6 @@ formulario.addEventListener("submit", function(event) {
     formulario.submit();
 
 });
+
 
 getApiGithub();
